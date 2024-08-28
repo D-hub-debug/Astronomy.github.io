@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the back button */
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* CSS for video responsiveness */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ผลการทดลองครั้งที่ 1</h1>
+    </header>
+    
+    <section>
+        <h2>รายละเอียดผลการทดลอง</h2>
+        <p>รายละเอียดของผลการทดลองครั้งที่ 1. (แบบไม่มีควัน)</p>
+        <div class="video-container">
+            <video controls>
+                <source src="videos/experiment1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>รายละเอียดของผลการทดลองครั้งที่ 1. (แบบมีควัน)</p>
+        <div class="video-container">
+            <video controls>
+                <source src="videos/experiment11.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <a href="index.html#home" class="back-button">ย้อนกลับไปหน้าหลัก</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Light and Smoke. All rights reserved.</p>
+    </footer>
+</body>
+</html>
